@@ -4,7 +4,7 @@
 
 pkgname=ympd-git
 _pkgname=ympd
-pkgver=1.2.3.r93.g2526a01
+pkgver=1.2.3.r117.g92d3806
 pkgrel=1
 pkgdesc="A standalone MPD Web GUI"
 arch=('i686' 'x86_64' 'armv6h' 'armv7h')
@@ -14,7 +14,7 @@ depends=('glibc' 'libmpdclient' 'openssl')
 makedepends=('cmake' 'git')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-install=("${_pkgname}.install")
+install="${_pkgname}.install"
 backup=('etc/default/ympd')
 source=(
   "git+https://github.com/SuperBFG7/ympd.git"
